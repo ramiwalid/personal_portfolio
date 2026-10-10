@@ -5,13 +5,42 @@ export const profile = {
   first: "RAMI",
   last: "WALID",
   role: "Software Engineer",
-  location: "Newark, NJ",
+  location: "New York City, New York",
   email: "ramiwalid5@pm.me",
   tagline: "I build fast, secure, beautifully crafted software — from AI agents to pixel-perfect interfaces.",
   about:
     "Computer Science student at NJIT (minor in Applied Statistics) and 2x NSF Scholar. I've shipped AI-agent tooling inside a payments security team at Fiserv, I research prompt-injection attacks on web-browsing agents, and I care a lot about interfaces that feel great to use.",
   resume: "/ramiwalid_resume.pdf",
 };
+
+export const aboutGroups: { title: string; points: string[] }[] = [
+  {
+    title: "Who I am",
+    points: [
+      "Computer Science student at NJIT with a minor in Applied Statistics",
+      "Based in Newark, NJ, graduating May 2027",
+      "Passionate about AI security, agentic systems, and polished frontends",
+    ],
+  },
+  {
+    title: "Education",
+    points: [
+      "B.S. Computer Science, New Jersey Institute of Technology (2024 — 2027)",
+      "Coursework: Advanced Data Structures & Algorithms, Operating Systems, Computer Architecture, Advanced Database Design, Linux Programming in C",
+      "2x NSF Scholar and member of the ACM Chapter at NJIT",
+    ],
+  },
+  {
+    title: "What I've done",
+    points: [
+      "Built an AI-agent vulnerability remediation tool at Fiserv across 12 core applications",
+      "Cut Harness deployment time by 85%, saving 20 hours a week",
+      "Researching indirect prompt injection in web-browsing AI agents at NJIT",
+      "Shipped an AWS-hosted Java math extraction engine for NJIT students and faculty",
+      "Building a full-stack credit card aggregator with Next.js, FastAPI and PostgreSQL",
+    ],
+  },
+];
 
 export const stats = [
   { value: 85, suffix: "%", label: "Faster deployments via Harness CI/CD" },

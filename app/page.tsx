@@ -7,7 +7,7 @@ import Marquee from "@/components/Marquee";
 import Magnetic from "@/components/Magnetic";
 import SpotlightCard from "@/components/SpotlightCard";
 import ProjectStack from "@/components/ProjectStack";
-import { education, experience, profile, projects, skills, socials, stats } from "@/lib/data";
+import { aboutGroups, education, experience, profile, projects, skills, socials, stats } from "@/lib/data";
 
 function Heading({ n, children }: { n: string; children: React.ReactNode }) {
   return (
@@ -38,9 +38,20 @@ export default function Home() {
             <Heading n="01 — About">
               Engineer by trade. <span className="dim">Designer at heart.</span>
             </Heading>
-            <Reveal delay={100}>
-              <p className="big-body">{profile.about}</p>
-            </Reveal>
+            <div className="about-groups">
+              {aboutGroups.map((g, i) => (
+                <Reveal key={g.title} delay={i * 90}>
+                  <div className="about-group">
+                    <h3>{g.title}</h3>
+                    <ul className="arrows">
+                      {g.points.map((pt) => (
+                        <li key={pt}>{pt}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
             <div className="stats">
               {stats.map((s, i) => (
                 <Reveal key={s.label} delay={i * 90}>
