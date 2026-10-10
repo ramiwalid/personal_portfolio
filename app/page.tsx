@@ -163,7 +163,6 @@ export default function Home() {
       <footer className="footer">
         <div className="wrap">
           <span>© {new Date().getFullYear()} {profile.name}</span>
-          <span>Built with Next.js, TypeScript &amp; plain CSS</span>
         </div>
       </footer>
     </>

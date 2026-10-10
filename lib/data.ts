@@ -18,8 +18,8 @@ export const aboutGroups: { title: string; points: string[] }[] = [
     title: "Who I am",
     points: [
       "Computer Science student at NJIT with a minor in Applied Statistics",
-      "Based in Newark, NJ, graduating May 2027",
-      "Passionate about AI security, agentic systems, and polished frontends",
+      "Based in Elizabeth, NJ, graduating May 2027",
+      "Passionate about Full-stack Software Engineering, AI security, agentic systems, and all things tech",
     ],
   },
   {
@@ -33,7 +33,7 @@ export const aboutGroups: { title: string; points: string[] }[] = [
   {
     title: "What I've done",
     points: [
-      "Built an AI-agent vulnerability remediation tool at Fiserv across 12 core applications",
+      "Shipped an internal AI-agent vulnerability remediation tool at Fiserv across the entire Software Development infrastructure",
       "Cut Harness deployment time by 85%, saving 20 hours a week",
       "Researching indirect prompt injection in web-browsing AI agents at NJIT",
       "Shipped an AWS-hosted Java math extraction engine for NJIT students and faculty",
