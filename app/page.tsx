@@ -56,7 +56,7 @@ export default function Home() {
               {stats.map((s, i) => (
                 <Reveal key={s.label} delay={i * 90}>
                   <div className="stat">
-                    <strong className="metal">
+                    <strong>
                       <Counter to={s.value} prefix={s.prefix} suffix={s.suffix} />
                     </strong>
                     <span>{s.label}</span>
