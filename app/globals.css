@@ -216,3 +216,8 @@ h3 { letter-spacing: -.02em; }
 .arrows li:hover { color: #fff; transform: translateX(6px); }
 .arrows li:hover::before { transform: translateX(6px); }
 @media (max-width: 860px) { .about-group { grid-template-columns: 1fr; gap: 16px; } .marquees { margin-top: 80px; } }
+
+/* Adjacent sections share one gap instead of stacking both paddings */
+.section + .section { padding-top: 0; }
+.section.contact { padding-bottom: 120px; }
+@media (max-width: 860px) { .section.contact { padding-bottom: 80px; } }
