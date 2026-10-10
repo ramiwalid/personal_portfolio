@@ -122,6 +122,7 @@ export default function Home() {
               ))}
             </ol>
 
+            <div id="education">
             <Reveal>
               <SpotlightCard className="edu" tilt={false}>
                 <p className="eyebrow">Education</p>
@@ -134,6 +135,7 @@ export default function Home() {
                 </ul>
               </SpotlightCard>
             </Reveal>
+            </div>
           </div>
         </section>
 
