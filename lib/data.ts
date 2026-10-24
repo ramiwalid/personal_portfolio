@@ -126,6 +126,12 @@ export const projects: Project[] = [
 ];
 
 export const experience = [
+	{
+		role: "Incoming Software Engineer Co-op",
+		focus: "Global Technology & Solutions",
+		org: "TD Bank",
+		period: "Jan - Jun 2027",
+	},
   {
     role: "Undergraduate Researcher",
     focus: "AI Security & Agentic Systems",
