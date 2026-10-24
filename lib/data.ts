@@ -17,7 +17,7 @@ export const aboutGroups: { title: string; points: string[] }[] = [
   {
     title: "Who I am",
     points: [
-      "Computer Science student at NJIT with a minor in Applied Statistics",
+      "Senior @ NJIT majoring in Computer Science and minoring in Applied Statistics",
       "Based in Elizabeth, NJ, graduating May 2027",
       "Passionate about Full-stack Software Engineering, AI security, agentic systems, and all things tech",
     ],
@@ -34,7 +34,8 @@ export const aboutGroups: { title: string; points: string[] }[] = [
     title: "What I've done",
     points: [
       "Shipped an internal AI-agent vulnerability remediation tool at Fiserv across the entire Software Development infrastructure",
-      "Cut Harness deployment time by 85%, saving 20 hours a week",
+      "Cut Harness deployment time for production CI/CD pipelines by 85%, saving 20 hours a week",
+      "Developed and deployed web application for Fiserv SWEs and executive leadership to track deliverables, learnings, commits, etc. for performance tracking.",
       "Researching indirect prompt injection in web-browsing AI agents at NJIT",
       "Shipped an AWS-hosted Java math extraction engine for NJIT students and faculty",
       "Building a full-stack credit card aggregator with Next.js, FastAPI and PostgreSQL",
@@ -75,17 +76,17 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Credit Card Aggregator",
-    kind: "Full-stack · Personal project",
-    period: "Nov 2025 — Present",
-    description: "A finance platform that consolidates multi-institution credit card data into one unified dashboard.",
+    title: "Fiserv Goals Tracker",
+    kind: "Full-stack · Fiserv",
+    period: "Summer 2026",
+    description: "A web application to track outcomes, commits, learnings, milestones, employee performance for all SWEs @ Fiserv",
     points: [
-      "Improved user financial oversight by 40% with centralized tracking",
-      "Secure FastAPI backend with OAuth2 and tokenized data pipelines",
-      "Optimized React components, cutting re-renders by 25%",
+      "Deployed company-wide full-stack web application that replaced an old, monolithic spreadsheet and improved visibility over 90%",
+      "Developed role-based dashboards, protecting data privacy and contribution visibility by over 60%",
+      "Integrated GitLab/Jira APIs to automatically fetch tickets and commits",
+      "Implemented a messaging interface, improving team communication",
     ],
-    tags: ["Next.js", "TypeScript", "React", "Tailwind", "FastAPI", "PostgreSQL"],
-    href: "https://github.com/ramiwalid",
+    tags: ["Node.js", "TypeScript", "React", "Java", "Spring Boot", "DynamoDB", "AWS"],
   },
   {
     title: "Agentic Vulnerability Remediation",
@@ -111,6 +112,20 @@ export const projects: Project[] = [
     ],
     tags: ["Python", "LangGraph", "Playwright", "browser-use", "Promptfoo"],
   },
+	{
+    title: "Credit Card Aggregator",
+    kind: "Full-stack · Personal project",
+    period: "Nov 2025 — Present",
+    description: "A finance platform that consolidates multi-institution credit card data into one unified dashboard.",
+    points: [
+      "Improved user financial oversight by 40% with centralized tracking",
+      "Secure FastAPI backend with OAuth2 and tokenized data pipelines",
+      "Optimized React components, cutting re-renders by 25%",
+    ],
+    tags: ["Next.js", "TypeScript", "React", "Tailwind", "FastAPI", "PostgreSQL"],
+    href: "https://github.com/ramiwalid",
+  },
+
   {
     title: "Math Extraction Engine",
     kind: "Research · NJIT",
